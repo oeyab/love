@@ -1,0 +1,614 @@
+
+<!DOCTYPE html>
+
+<head>
+
+<style id='page-skin-1' type='text/css'><!--
+/* CSS Document */
+*{
+padding:0;
+margin:0;
+}
+.clear{
+clear:both;
+}
+a img{
+border:0;
+}
+a:focus{
+outline:0;
+}
+body{
+background:#00BFFF;
+font-family: 'Ubuntu Condensed', sans-serif;
+font-size:14px;
+}
+.wrapper{
+width:960px;
+margin:0 auto;
+}
+/* TOP BAR START */
+.topbar{
+background:#A9A9A9;
+height:50px;
+width:100%;
+}
+.topbar-center{
+width:960px;
+margin:0 auto;
+}
+.topbar-logo{
+float:left;
+color:#000000;
+text-transform:uppercase;
+padding-top:11px;
+}
+.topbar-logo img{
+float:left;
+}
+.topbar-logo h1{
+font-size: 18px;
+font-weight: 400;
+letter-spacing:0.8px;
+float: left;
+padding-left: 6px;
+padding-top: 3px;
+}
+.topbar-menu{
+float:right;
+}
+.topbar ul{
+list-style:none;
+}
+.topbar ul li{
+float:left;
+}
+.topbar ul li a{
+display:block;
+padding:18px 18px 6px 18px;
+text-decoration:none;
+color:#000000;
+letter-spacing:0.8px;
+}
+.topbar ul li a:hover,.topbar ul li a.selected{
+background:#c72505;
+color:#FFF;
+}
+/* TOP BAR END */
+.colorbar{
+height:5px;
+width:100%;
+/*background:url() repeat-x;*/
+margin-bottom:25px;
+/*box-shadow: 2px 1px 2px #D6D6D6;*/
+}
+h1.numbering{
+font-size:50px;display:none;
+font-weight:400;text-shadow:1px 1px 1px #333;
+line-height:130px;color:#fff;
+}
+h3.title{
+font-size:38px;margin-top:150px;
+font-weight:400;opacity:0.7;
+letter-spacing:3px;text-shadow:1px 1px 1px #333;
+padding-left:5px;color:#fff;
+}
+h2.smalltitle{
+font-size:28px;
+padding-top:20px;
+}
+.squarecontents{
+color:#FFF;
+padding-left:20px;
+}
+.squarecontents p{
+line-height:26px;
+font-size:16px;
+letter-spacing:0.6px;
+padding-top:10px;
+}
+.square-cards{
+display:block;
+text-decoration:none;
+color:#FFF;
+padding-left:20px;
+}
+.square-cards:hover{
+color:#EDD;
+}
+.squares{
+position:relative;
+overflow:hidden;
+}
+.moveablesquare{
+position:absolute;
+/*left:-255px;
+top:0;*/
+}
+.square-1{
+width:700px;
+height:340px;
+margin-right:5px;
+float:left;
+}
+.square-1-card{
+width:680px;
+height:255px;
+background:url(6n.jpg) no-repeat;
+padding-top:85px;
+}
+.about-content{
+width:680px;
+height:340px;
+background:#FF00FF;
+}
+.square-2{
+width:255px;
+height:340px;
+color:#FFF;
+float:left;
+}
+.square-2-card{
+width:235px;
+height:255px;
+background:url(8.jpg) ;
+padding-top:85px;
+float:left;
+}
+.follow-content{
+width:235px;
+height:340px;
+background:#324da4;
+float:left;
+}
+.follow-content ul{
+list-style:none;
+}
+.follow-content ul li{
+float:left;
+padding-right:30px;
+padding-bottom:20px;
+}
+.follow-content ul li a{
+display:block;
+}
+.follow-content ul li a:hover img{
+border:5px solid #E34923;
+margin:-5px;
+}
+.googleplusone{
+background:#FFF;
+padding:3px;
+float:left;
+border:2px solid #E34923;
+}
+.square-3{
+width:370px;
+height:284px;
+color:#FFF;
+float:left;
+margin-top:5px;
+margin-right:5px;
+}
+.square-3-card{
+width:350px;
+height:224px;
+background:url(7.jpg) repeat-x;
+padding-top:60px;
+float:left;
+}
+.blog-content{
+width:330px;
+height:284px;
+background:#00FF00;
+float:left;
+padding-right:20px;
+}
+.square-4{
+width:585px;
+height:284px;
+color:#FFF;
+float:left;
+margin-top:5px;
+}
+.square-4-card{
+width:565px;
+height:224px;
+background:url(4n.jpg) repeat-x;
+padding-top:60px;
+}
+.contact-content{
+width:565px;
+height:284px;
+background:#FF1000;
+}
+.contact-content ul{
+list-style:none;
+}
+.contact-msg{
+float:right;
+padding-top:35px;
+padding-right:20px;
+}
+.contact-msg img{
+padding-right:5px;
+padding-bottom:1px;
+}
+.square-5{
+width:960px;
+height:200px;
+color:#FFF;
+float:left;
+margin-top:5px;
+}
+.square-5-card{
+width:940px;
+height:185px;
+background:#9932CC;
+padding-top:15px;
+}
+.mywork-content{
+width:940px;
+height:284px;
+background:#9932CC;
+padding-right:20px;
+}
+.mywork-thumbnail-container{
+width:270px;
+padding-top:20px;
+float:left;
+}
+.mywork-thumbnail-container ul{
+list-style:none;
+}
+.mywork-thumbnail-container ul li{
+float:left;
+}
+.mywork-thumbnail-container ul li a{
+display:block;
+margin-right:12px;
+margin-bottom:5px;
+}
+.mywork-thumbnail-container ul li a img{
+border:3px #C33 solid;
+}
+.mywork-thumbnail-container ul li a:hover img,.mywork-thumbnail-container ul li a.selected img{
+border:3px #FC0 solid;
+}
+.mywork-bigimg-container{
+height:194px;max-width:200px;
+float:left;
+border:3px solid #C33;
+margin-top:20px;
+}
+.mywork-bigimg-container img{max-width:200px;
+display:none;
+}
+.mywork-description-container{
+height:162px;
+float:left;
+margin-top:20px;
+padding-left:10px;
+width:440px;
+}
+.mywork-description-container div{
+display:none;
+}
+.form-row{
+padding-top:15px;
+padding-bottom:6px;
+width:100%;
+}
+.form-textfield{
+font-family: 'Ubuntu Condensed', sans-serif;
+padding:10px 5px;
+width:249px;
+border:1px #933 solid;
+float:left;
+margin-right:20px;
+background:#681f30;
+color:#FFF;
+font-size:14px;
+}
+.form-textarea{
+font-family: 'Ubuntu Condensed', sans-serif;
+padding:10px 5px;
+width:530px;
+border:1px #933 solid;
+float:left;
+margin-right:30px;
+background:#681f30;
+color:#FFF;
+height:75px;
+overflow:auto;
+font-size:14px;
+}
+.Lfinal {float:left;width:350px;font-size:20px;margin-top:20px;}
+.Rfinal {float:right;width:500px;margin-top:20px;}
+input.ya
+{
+color: #333;
+background: lightpink;margin-right:20px;font-weight:bold;
+width:200px;height:40px;font-size:30px;
+border: 2px solid pink;box-shadow:2px 2px 2px #333;
+}
+input.ya:hover {box-shadow:2px 2px 2px #000;background:pink;color:#000;border: 2px solid #fff}
+input.tidak
+{
+color: #ccc;box-shadow:2px 2px 2px #333;
+background: #555;margin-right:20px;margin-top:5px;height:30px;
+width:100px;position:center center;
+border: 1px solid #777
+}
+input.tidak:hover {box-shadow:2px 2px 2px #333;background:gray;color:#fff;border: 1px solid #999}
+.submit input
+{
+color: #000;
+background: #ffa20f;
+border: 2px outset #d7b9c9
+}
+.green-submit{
+padding:10px;
+border:#060 solid 2px;
+background:#619b20;
+font-family: 'Ubuntu Condensed', sans-serif;
+color:#FFF;
+float:left;
+margin-right:20px;
+cursor:pointer;
+}
+.green-submit:hover{
+background:#769356;
+}
+.green-submit.disabled, .green-submit:active{
+background:#769356;
+color:#CCC;
+}
+.callme{
+float:left;
+padding-right:10px;
+padding-top:12px;
+}
+.phonenumber{
+font-size:24px;
+padding-top:5px;
+}
+/* FOR FOOTER */
+.footer{
+background:#A9A9A9;
+width:100%;
+margin-top:50px;
+}
+.footer-center{
+width:960px;
+margin:0 auto;
+padding-top:15px;
+padding-bottom:10px;
+}
+
+
+--></style>
+<script src='http://sayloveonline.googlecode.com/files/jquery-1.7.min.js' type='text/javascript'></script>
+<script src='http://sayloveonline.googlecode.com/files/jquery.easing.1.3.js' type='text/javascript'></script>
+<script src='http://sayloveonline.googlecode.com/files/jquery.scrollTo-min.js' type='text/javascript'></script>
+<script src='http://sayloveonline.googlecode.com/files/script.js' type='text/javascript'></script>
+<script type="text/javascript">var a=navigator,b="userAgent",c="indexOf",f="&m=1",g="(^|&)m=",h="?",k="?m=1";function l(){var d=window.location.href,e=d.split(h);switch(e.length){case 1:return d+k;case 2:return 0<=e[1].search(g)?null:d+f;default:return null}}if(-1!=a[b][c]("Mobile")&&-1!=a[b][c]("WebKit")&&-1==a[b][c]("iPad")||-1!=a[b][c]("Opera Mini")||-1!=a[b][c]("IEMobile")){var m=l();m&&window.location.replace(m)};
+</script><script type="text/javascript">
+if (window.jstiming) window.jstiming.load.tick('headEnd');
+</script></head>
+<body>
+<div class='navbar section' id='navbar'></div>
+<!-- TOP BAR START -->
+<div class='topbar'>
+<div class='topbar-center'>
+<div class='topbar-logo'>
+<img alt='Logo' src='lop.jpg' width='32'/>
+<h1>HBD n LOVE U, NIS!</h1>
+</div>
+<div class='topbar-menu'>
+<ul>
+<li>
+<a class='selected home-menubtn' href='#'>HOME</a>
+</li>
+<li>
+<a class='about-menubtn' href='#foryou'>FOR YOU</a>
+</li>
+<li>
+<a class='follow-menubtn' href='#support'>SUPPORT</a>
+</li>
+<li>
+<a class='blog-menubtn' href='#itsme'>ABOUT ME</a>
+</li>
+<li>
+<a class='contact-menubtn' href='#itsyou'>IT'S YOU</a>
+</li>
+<li>
+<a class='work-menubtn' href='#iluvu'>LOVE U</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- TOP BAR END -->
+<div class='colorbar'>
+</div>
+<div class='wrapper'>
+
+<div class='square-1 squares'>
+<div class='moveablesquare'>
+<a class='square-1-card square-cards' href='#foryou'>
+<h3 class='title'>FOR YOU!</h3>
+</a>
+<div class='about-content squarecontents'>
+<h2 class='smalltitle'>Just for you..</h2>
+<p>
+<img align='left' alt='Photo' src='2.jpg' style='border: 1px solid #D6D6D6;margin-right: 8px;margin-top: 8px;' width='120px'/>
+ Selamat ulang tahun dek. Semoga panjang umur, sehat selalu dan menjadi wanita yang sholikhah. Maaf apabila aku telat mengucapkan, karena memang ada tugas UAS yang harus dikebut sehingga lupa akan ulang tahunmu. Jujur saja kau memang spesial bagiku, memandangmu saja sudah membuatku bahagia. Mungkin inikah yang dinamakan cinta kata orang di luar sana. Terasa begitu indah.  
+            </p>
+<p>         	
+Situs ini untukmu dek.. Aku hanya ingin mengungkapkan isi hatiku ini dengan cara yang lain..
+            </p>
+</div>
+<div class='clear'></div>
+</div>
+</div>
+<div class='square-2 squares'>
+<div class='moveablesquare' style='width:510px; left:-255px;'>
+<div class='follow-content squarecontents'>
+<h2 class='smalltitle'>SUPPORT</h2>
+<ul style='padding-top:30px;'>
+<li>
+<a href='http://www.facebook.com/rangga.oeyab'>
+<img alt='Facebook logo' src='http://2.bp.blogspot.com/-TN0wIr9W3lw/T9jLhU94boI/AAAAAAAAET4/M_Hr0k-GxwE/s1600/social-facebook-box-blue-icon.png' width='70'/>
+</a>
+</li>
+<li>
+<a href='https://plus.google.com/u/0/114968083394220563485/posts' rel='me'>
+<img alt='Google Plus Logo' src='http://1.bp.blogspot.com/-oWsGgxyraXE/T9jLi4wVzPI/AAAAAAAAEUA/27EoXNc3Po4/s1600/social-google-box-icon.png' width='70'/>
+</a>
+</li>
+<li>
+<a href='http://twitter.com/mbahronggo'>
+<img alt='Twitter Logo' src='http://2.bp.blogspot.com/-U7-rvco7N_0/T9jLkFUlcBI/AAAAAAAAEUI/O441F-gf8ZI/s1600/social-twitter-box-blue-icon.png' width='70'/>
+</a>
+</li>
+<li>
+<a href='http://feeds.feedburner.com/'>
+<img alt='RSS Logo' src='http://3.bp.blogspot.com/-rj5o5hPu4TM/T9ky6t5ZKVI/AAAAAAAAAoo/_NsX31L6i_A/s1600/social-rss-box-orange-icon.png' width='70'/>
+</a>
+</li>
+</ul>
+<div class='clear'></div>
+<div class='googleplusone'>
+<!-- Place this tag where you want the +1 button to render -->
+<g:plusone annotation='inline' width='165'></g:plusone>
+<!-- Place this render call where appropriate -->
+<script type='text/javascript'>
+                (function() {
+                  var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                  po.src = 'https://apis.google.com/js/plusone.js';
+                  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+                })();
+              </script>
+</div>
+</div>
+<a class='square-2-card square-cards' href='#support'>
+<h1 class='numbering'>02.</h1>
+<h3 class='title'>SUPPORT</h3>
+</a>
+<div class='clear'></div>
+</div>
+</div>
+<div class='square-3 squares'>
+<div class='moveablesquare' style='width:740px;'>
+<a class='square-3-card square-cards' href='#itsme'>
+<h3 class='title'>ABOUT ME</h3>
+</a>
+<div class='blog-content squarecontents'>
+
+<p>Aku bukan pria sempurna, penuh harta,berwajah tampan dan tubuh atletis idaman banyak orang. Aku juga jarang menghubungimu bukan karena tak mau, tapi kau juga banyak tugas sehingga aku enggan mengganggumu. Satu hal yang harus kau ketahui bahwa cinta adalah perasaan yang diberikan Tuhan pada sepasang manusia untuk saling menyayangi, mengasihi dll. Perasaan itu kini tertuju padamu, aku harap kau mau menerimanya.</p>
+</div>
+</div>
+</div>
+<div class='square-4 squares'>
+<div class='moveablesquare' style='top:-284px;'>
+<div class='contact-content squarecontents'>
+<div class='square-title-topbar'>
+<h2 class='smalltitle'>YOU MAKE ME CRAZY</h2>
+<div class='mywork-thumbnail-container'>
+<ul>
+<li>
+<a class='selected' href='#' rel='1'>
+<img alt='Mootlet Logo Small' height='90' src='1.jpg' width='70'/>
+</a>
+</li>
+<li>
+<a href='#' rel='2'>
+<img alt='Cristina Handbags Logo Small' height='90' src='2.jpg' width='70'/>
+</a>
+</li>
+<li>
+<a href='#' rel='3'>
+<img alt='Naalam Logo Small' height='90' src='3.jpg' width='70'/>
+</a>
+</li>
+<li>
+<a href='#' rel='4'>
+<img alt='Enma Logo Small' height='90' src='5.jpg' width='70'/>
+</a>
+</li>
+<li>
+<a href='#' rel='5'>
+<img alt='Medic Logo Small' height='90' src='9.jpg' width='70'/>
+</a>
+</li>
+<li>
+<a href='#' rel='6'>
+<img alt='UKCBC Logo Small' height='90' src='11.jpg' width='70'/>
+</a>
+</li>
+</ul>
+</div>
+<div class='mywork-bigimg-container'>
+<img class='1' height='194' src='1.jpg' style='display:block'/>
+<img class='2' height='194' src='2.jpg'/>
+<img class='3' height='194' src='3.jpg'/>
+<img class='4' height='194' src='5.jpg'/>
+<img class='5' height='194' src='9.jpg'/>
+<img class='6' height='194' src='11.jpg'/>
+</div>
+</div>
+</div>
+<a class='square-4-card square-cards' href='#itsyou'>
+<h3 class='title'>YOU'RE SO BEAUTIFUL</h3>
+</a>
+<div class='clear'></div>
+</div>
+</div>
+<div class='square-5 squares'>
+<a class='square-5-card square-cards' href='#iluvu'>
+<h3 class='title' style='text-align:center;margin-top:10px;font-size:130px'>I LOVE U!</h3>
+</a>
+<div class='mywork-content squarecontents'>
+<div class='Lfinal'>Aku buat website ini untuk memberi tahu perasaanku padamu dek. Aku mau tanya, apakah Ganis mau menjadi pacarku? Silahkan pilih saja jawaban YA atau TIDAK, Setiap keputusan yang Ganis ambil akan masuk ke emailku.</div>
+<div class='Rfinal'>
+<h2>I LOVE U MAUKAH KAMU MENJADI PACARKU?</h2>
+
+<form id="emf-form" enctype="multipart/form-data" method="post" action="http://www.emailmeform.com/builder/form/L7MT1X8cr31kfiO9WfCA" name="emf-form">
+  <table style="text-align:left;" cellpadding="2" cellspacing="0" border="0" >
+    
+    <tr valign="top">
+      
+      <td id="td_element_field_0" style="">
+        <div style="width:50%;padding-bottom:5px;">
+          <input id="element_0_0" class="ya" name="element_0" value="YA" class="validate[required]" type="submit" />
+        </div></td><td>
+        <div style="width:50%;padding-bottom:5px;">
+          <input id="element_0_1" class="tidak" name="element_0" value="TIDAK" class="validate[required]" type="submit" />
+        </div></td>
+        <div style="clear:both;"></div>
+        <div style="padding-bottom:8px;color:#000000;"></div>
+      </td>
+    </tr>
+<tr><td colspan="2" align="left">
+		<input name="element_counts" value="1" type="hidden" />
+		<input name="embed" value="form" type="hidden" />
+		</td></tr>
+      </table>
+</form>
+        </div></div>
+</div>
+<div class='clear'>
+</div>
+</div>
+<div class='footer'>
+<div class='footer-center'>
+<div class='footer-center-left'>
+
+</div>
+<div class='clear'></div>
+</div>
+</div>
+
+</body>
+</html>
